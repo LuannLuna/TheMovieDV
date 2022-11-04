@@ -15,6 +15,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     private lazy var mainCoordinator: MainCoordinator = {
         guard let window = window else { fatalError("Enable to load window") }
+        window.overrideUserInterfaceStyle = .dark
         return MainCoordinator(window: window)
     }()
 

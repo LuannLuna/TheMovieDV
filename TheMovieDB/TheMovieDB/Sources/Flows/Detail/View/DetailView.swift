@@ -18,8 +18,7 @@ struct DetailView: View {
                 URLImage(url: imgBaseUrl + (viewModel.tvShow.posterPath ?? ""))
                     .scaledToFill()
                     .frame(height: 230)
-                    .clipped()
-                    .offset(y: -20)
+                    .offset(y: -10)
                     ZStack {
                         Color.darkColor
                             .cornerRadius(12)
